@@ -1,0 +1,63 @@
+#MyModule = require("myModule")
+
+#MyModule.myFunction()
+
+##Set custom device - iPhone X
+#figma = Framer.Importer.load("imported/")
+#projectLayers = Framer.Importer.load("imported", scale: 1)
+
+#$ = Framer.Importer.load("imported")
+
+#feedModule = require("feedScreen")
+
+#feedModule.examFunction()
+
+#Framer.Device = new Framer.DeviceComponent()
+#Framer.Device.setupContext()
+#Framer.Device.customize
+	#screenWidth: Framer.Device.width
+	#screenHeight: Framer.Device.height
+	#backgroundColor: 'black'
+	#deviceImage: "https://www.citypng.com/public/uploads/preview/iphone-14-pro-max-mockup-hd-png-116625857418akbu6lfyo.png"
+
+#Framer.Defaults.DeviceComponent = Framer.Device
+
+
+#Device.deviceType = 'apple-macbook-pro'
+# Custom device code (for later)
+#Framer.Device.deviceType = "custom-iPhone-14"
+
+#Device = new DeviceComponent()
+#Device.setupContext()
+## A couple different ways to write out a simple animation
+
+##Simple animate function
+#layerA.onClick(() => layerA.animate({
+#	scale: 1.25
+#})) 
+
+##Using the animate object itself. 
+layerA.onClick -> 
+	animationQuick.start()
+#layerA.on Events.Click, ->
+ #   print "Click!"
+
+layerA = new Layer
+	x: 100
+	y: 100
+	width: 200
+	height: 200
+	borderRadius: 8
+	backgroundColor: "#28affa"
+
+
+animationQuick = new Animation(layerA, {
+	scale: 1.25
+	options: {
+		curve: Bezier(0.25,0.1,0.25,1)
+	}
+})
+
+##Using the animate object itself. 
+layerA.onTap -> 
+	animationQuick.start()
