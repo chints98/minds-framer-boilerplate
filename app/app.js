@@ -1,6 +1,6 @@
 (function() {
   //#Initial device setup 
-  var Device, bgLayer, topBar, topBarIcons;
+  var Device, bgLayer;
 
   Framer.DeviceView.Devices["custom-iPhone-14"] = {
     deviceType: "custom-iPhone-14",
@@ -40,30 +40,14 @@
 
   //# Background for mobile - dark
   bgLayer = new BackgroundLayer({
-    backgroundColor: "#1F252C"
+    backgroundColor: "#1C1D1F"
   });
 
   
-  //print (bgLayer.width)
-  //#example layer (quick animation)
+//print (bgLayer.width)
+//#example layer (quick animation)
 
-  //#top bar experiment
-  topBar = new Layer({
-    width: Screen.width,
-    height: 48,
-    backgroundColor: "#333",
-    y: 0,
-    x: 0
-  });
-
-  topBarIcons = new Layer({
-    width: 124,
-    height: 24,
-    image: "app/assets/icons.png",
-    parent: topBar,
-    x: Screen.width - 156,
-    y: 12
-  });
+//#top bar experiment
 
 }).call(this);
 

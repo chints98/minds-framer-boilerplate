@@ -1,5 +1,5 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-var Device, bgLayer, topBar, topBarIcons;
+var Device, bgLayer;
 
 Framer.DeviceView.Devices["custom-iPhone-14"] = {
   deviceType: "custom-iPhone-14",
@@ -32,27 +32,10 @@ Device = new DeviceComponent;
 
 Device.setupContext();
 
-Device.deviceType = 'google-pixel-quite-black';
+Device.deviceType = 'custom-macbook-16';
 
 bgLayer = new BackgroundLayer({
-  backgroundColor: "#1F252C"
-});
-
-topBar = new Layer({
-  width: Screen.width,
-  height: 48,
-  backgroundColor: "#333",
-  y: 0,
-  x: 0
-});
-
-topBarIcons = new Layer({
-  width: 124,
-  height: 24,
-  image: "app/assets/icons.png",
-  parent: topBar,
-  x: Screen.width - 156,
-  y: 12
+  backgroundColor: "#1C1D1F"
 });
 
 

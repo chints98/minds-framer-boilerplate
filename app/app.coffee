@@ -34,7 +34,7 @@ Device.deviceType = 'custom-macbook-16'
 
 ## Background for mobile - dark
 bgLayer = new BackgroundLayer 
-	backgroundColor: "#1F252C"
+	backgroundColor: "#1C1D1F"
 	
 
 
@@ -42,19 +42,5 @@ bgLayer = new BackgroundLayer
 ##example layer (quick animation)
 
 ##top bar experiment
-topBar = new Layer
-	width: Screen.width
-	height: 48
-	backgroundColor: "#333"
-	y: 0
-	x: 0
-
-topBarIcons = new Layer
-	width: 124
-	height: 24
-	image: "app/assets/icons.png"
-	parent: topBar
-	x: Screen.width - 156
-	y: 12
 
 
